@@ -1,0 +1,4 @@
+# Public event endpoint needs anonymous access; safety is enforced in the handler.
+# Never enable unauthenticated access for an administrator or purchase-confirmation endpoint.
+[functions.track-funnel-event]
+verify_jwt = false
